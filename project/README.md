@@ -101,8 +101,8 @@ npm run dev
 Currently configured sources:
 - Times of India
 - NDTV
-- Reuters
-- BBC News
+- CNN
+- NY Times
 
 ## Sentiment Analysis
 
