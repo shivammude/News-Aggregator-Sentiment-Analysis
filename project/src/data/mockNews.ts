@@ -1,0 +1,132 @@
+import { NewsArticle, NewsSource } from '../types/news';
+
+export const mockSources: NewsSource[] = [
+  { id: '1', name: 'Times of India', domain: 'timesofindia.com', credibility: 0.85, logo: 'https://images.pexels.com/photos/518543/pexels-photo-518543.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1' },
+  { id: '2', name: 'NDTV', domain: 'ndtv.com', credibility: 0.88, logo: 'https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1' },
+  { id: '3', name: 'Reuters', domain: 'reuters.com', credibility: 0.95, logo: 'https://images.pexels.com/photos/750843/pexels-photo-750843.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1' },
+  { id: '4', name: 'BBC News', domain: 'bbc.com', credibility: 0.92, logo: 'https://images.pexels.com/photos/7841459/pexels-photo-7841459.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1' },
+  { id: '5', name: 'CNN', domain: 'cnn.com', credibility: 0.78, logo: 'https://images.pexels.com/photos/1591056/pexels-photo-1591056.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=1' }
+];
+
+export const mockNews: NewsArticle[] = [
+  {
+    id: '1',
+    title: 'Tech Giants Report Strong Q4 Earnings Despite Market Uncertainty',
+    summary: 'Major technology companies exceeded expectations with robust quarterly results, showing resilience in challenging economic conditions.',
+    content: 'Technology sector demonstrates remarkable adaptability and growth potential amid global economic headwinds...',
+    url: 'https://example.com/tech-earnings',
+    source: 'Reuters',
+    author: 'Sarah Johnson',
+    publishedAt: new Date('2024-01-15T10:30:00Z'),
+    sentiment: 'positive',
+    sentimentScore: 0.75,
+    category: 'Technology',
+    imageUrl: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 4
+  },
+  {
+    id: '2',
+    title: 'Climate Change Summit Ends Without Major Breakthrough',
+    summary: 'World leaders conclude climate discussions with limited progress on emission reduction targets.',
+    content: 'Despite intensive negotiations, the latest climate summit failed to produce the ambitious commitments needed...',
+    url: 'https://example.com/climate-summit',
+    source: 'BBC News',
+    author: 'Michael Chen',
+    publishedAt: new Date('2024-01-15T08:15:00Z'),
+    sentiment: 'negative',
+    sentimentScore: -0.65,
+    category: 'Environment',
+    imageUrl: 'https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 6
+  },
+  {
+    id: '3',
+    title: 'New Medical Research Shows Promise for Cancer Treatment',
+    summary: 'Breakthrough study reveals innovative approach to targeting aggressive cancer cells with minimal side effects.',
+    content: 'Researchers at leading medical institutions have developed a revolutionary treatment protocol...',
+    url: 'https://example.com/cancer-research',
+    source: 'NDTV',
+    author: 'Dr. Priya Sharma',
+    publishedAt: new Date('2024-01-15T06:45:00Z'),
+    sentiment: 'positive',
+    sentimentScore: 0.88,
+    category: 'Health',
+    imageUrl: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 8
+  },
+  {
+    id: '4',
+    title: 'Global Markets Remain Volatile Amid Inflation Concerns',
+    summary: 'Stock markets worldwide show mixed signals as investors navigate uncertain economic landscape.',
+    content: 'Financial markets continue to experience significant volatility as central banks worldwide...',
+    url: 'https://example.com/market-volatility',
+    source: 'Times of India',
+    author: 'Raj Patel',
+    publishedAt: new Date('2024-01-15T05:20:00Z'),
+    sentiment: 'neutral',
+    sentimentScore: -0.15,
+    category: 'Business',
+    imageUrl: 'https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 5
+  },
+  {
+    id: '5',
+    title: 'Renewable Energy Sector Attracts Record Investment',
+    summary: 'Clean energy projects receive unprecedented funding as governments prioritize sustainability goals.',
+    content: 'The renewable energy sector has witnessed a surge in investment, with solar and wind projects...',
+    url: 'https://example.com/renewable-investment',
+    source: 'CNN',
+    author: 'Emily Rodriguez',
+    publishedAt: new Date('2024-01-15T04:10:00Z'),
+    sentiment: 'positive',
+    sentimentScore: 0.82,
+    category: 'Energy',
+    imageUrl: 'https://images.pexels.com/photos/421888/pexels-photo-421888.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 7
+  },
+  {
+    id: '6',
+    title: 'Cybersecurity Threats Escalate as Digital Attacks Increase',
+    summary: 'Organizations face growing challenges from sophisticated cyber attacks targeting critical infrastructure.',
+    content: 'The cybersecurity landscape has become increasingly complex as threat actors develop more...',
+    url: 'https://example.com/cyber-threats',
+    source: 'Reuters',
+    author: 'James Wilson',
+    publishedAt: new Date('2024-01-15T02:30:00Z'),
+    sentiment: 'negative',
+    sentimentScore: -0.72,
+    category: 'Technology',
+    imageUrl: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 6
+  },
+  {
+    id: '7',
+    title: 'Education Technology Transforms Learning Experience',
+    summary: 'Digital learning platforms show significant improvements in student engagement and outcomes.',
+    content: 'Educational institutions worldwide are embracing technology-driven solutions to enhance...',
+    url: 'https://example.com/edtech-transformation',
+    source: 'NDTV',
+    author: 'Anita Kumar',
+    publishedAt: new Date('2024-01-15T01:15:00Z'),
+    sentiment: 'positive',
+    sentimentScore: 0.69,
+    category: 'Education',
+    imageUrl: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 5
+  },
+  {
+    id: '8',
+    title: 'Global Supply Chain Disruptions Continue to Impact Trade',
+    summary: 'International shipping delays and logistics challenges affect businesses worldwide.',
+    content: 'Supply chain disruptions continue to create significant challenges for global trade...',
+    url: 'https://example.com/supply-chain',
+    source: 'BBC News',
+    author: 'David Thompson',
+    publishedAt: new Date('2024-01-14T23:45:00Z'),
+    sentiment: 'negative',
+    sentimentScore: -0.58,
+    category: 'Business',
+    imageUrl: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&dpr=1',
+    readTime: 4
+  }
+];
