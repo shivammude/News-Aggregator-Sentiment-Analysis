@@ -114,6 +114,8 @@ The system uses a hybrid approach:
 - **VADER Sentiment** (70% weight) - Optimized for social media/news
 - **TextBlob** (30% weight) - General purpose sentiment analysis
 
+
+
 Sentiment categories:
 - **Positive**: Score ≥ 0.05
 - **Negative**: Score ≤ -0.05
