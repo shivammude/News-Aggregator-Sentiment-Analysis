@@ -1,7 +1,9 @@
 # News Aggregator Sentiment Analysis Dashboard
 
 A comprehensive news aggregation and sentiment analysis system built with React frontend and Python FastAPI backend.
+
 ![Dashboard](https://github.com/shivammude/News-Aggregator-Sentiment-Analysis/blob/master/project/Dashboard.png)
+
 ## Features
 
 ### Frontend (React + TypeScript)
