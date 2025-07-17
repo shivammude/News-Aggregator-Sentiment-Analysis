@@ -1,8 +1,10 @@
-# News Aggregator Sentiment Analysis Dashboard
+# News Aggregator Sentiment Analysis Dashboard - NewsScope
 
 A comprehensive news aggregation and sentiment analysis system built with React frontend and Python FastAPI backend.
 
 ![Dashboard](https://github.com/shivammude/News-Aggregator-Sentiment-Analysis/blob/master/project/Dashboard.png)
+
+![Articles_SentimentScore](https://github.com/shivammude/News-Aggregator-Sentiment-Analysis/blob/master/project/Articles_SentimentScore.png)
 
 ## Features
 
