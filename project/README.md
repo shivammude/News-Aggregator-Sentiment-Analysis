@@ -108,18 +108,22 @@ Currently configured sources:
 - CNN
 - NY Times
 
+![Sources](https://github.com/shivammude/News-Aggregator-Sentiment-Analysis/blob/master/project/Sources.png)
+
+![Category](https://github.com/shivammude/News-Aggregator-Sentiment-Analysis/blob/master/project/Category.png)
+
 ## Sentiment Analysis
 
 The system uses a hybrid approach:
 - **VADER Sentiment** (70% weight) - Optimized for social media/news
 - **TextBlob** (30% weight) - General purpose sentiment analysis
 
-
-
 Sentiment categories:
 - **Positive**: Score ≥ 0.05
 - **Negative**: Score ≤ -0.05
 - **Neutral**: -0.05 < Score < 0.05
+
+![Filtering_Sentiment](https://github.com/shivammude/News-Aggregator-Sentiment-Analysis/blob/master/project/Filtering_Sentiment.png)
 
 ## Configuration
 
